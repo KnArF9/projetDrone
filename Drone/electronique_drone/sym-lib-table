@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name Librairie_Kicad_drone)(type Legacy)(uri C:/Users/farch/Desktop/prototypage#2/Drone/electronique_drone/Librairie_Kicad_drone.lib)(options "")(descr ""))
+  (lib (name csd17578q5a)(type Legacy)(uri ${KIPRJMOD}/csd17578q5a.lib)(options "")(descr ""))
+  (lib (name CSD1320test2)(type Legacy)(uri ${KIPRJMOD}/CSD1320test2.lib)(options "")(descr ""))
+  (lib (name 2020-04-21_15-01-03)(type Legacy)(uri C:/Users/farch/Desktop/prototypage#2/Drone/csd1320/2020-04-21_15-01-03.lib)(options "")(descr ""))
+  (lib (name electronique_drone-rescue)(type Legacy)(uri ${KIPRJMOD}/electronique_drone-rescue.lib)(options "")(descr ""))
+  (lib (name libRegulateur_FA)(type Legacy)(uri ${KIPRJMOD}/libRegulateur_FA.lib)(options "")(descr ""))
+)

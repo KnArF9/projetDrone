@@ -1,0 +1,240 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title "ESP01"
+Date "2020-09-01"
+Rev "2"
+Comp "Cégep de Sherbrooke"
+Comment1 "Par: François Archambault"
+Comment2 "Pour: Pierre Bergeron"
+Comment3 "Session Automne 2020"
+Comment4 ""
+$EndDescr
+$Comp
+L electronique_drone-rescue:esp-01-Librairie_Kicad_drone U501
+U 1 1 5E925F53
+P 5400 2700
+F 0 "U501" H 6050 2650 50  0000 C CNN
+F 1 "esp-01" H 5600 2650 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 6050 2650 50  0001 C CNN
+F 3 "" H 6050 2650 50  0001 C CNN
+	1    5400 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3700 5850 3800
+$Comp
+L power:GND #PWR0501
+U 1 1 5E926024
+P 5850 3800
+F 0 "#PWR0501" H 5850 3550 50  0001 C CNN
+F 1 "GND" H 5855 3627 50  0000 C CNN
+F 2 "" H 5850 3800 50  0001 C CNN
+F 3 "" H 5850 3800 50  0001 C CNN
+	1    5850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2700 5850 2550
+Text GLabel 5850 2550 1    50   Input ~ 0
++3.3v
+$Comp
+L Device:R R501
+U 1 1 5E917E4D
+P 2450 2850
+F 0 "R501" H 2520 2896 50  0000 L CNN
+F 1 "4.7K" H 2520 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2380 2850 50  0001 C CNN
+F 3 "~" H 2450 2850 50  0001 C CNN
+	1    2450 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R502
+U 1 1 5E917E91
+P 3300 2850
+F 0 "R502" H 3370 2896 50  0000 L CNN
+F 1 "4.7K" H 3370 2805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 2850 50  0001 C CNN
+F 3 "~" H 3300 2850 50  0001 C CNN
+	1    3300 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW501
+U 1 1 5E917F1E
+P 2450 3450
+F 0 "SW501" V 2496 3402 50  0000 R CNN
+F 1 "SW_Push" V 2405 3402 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 2450 3650 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+	1    2450 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Switch:SW_Push SW502
+U 1 1 5E917F79
+P 3300 3450
+F 0 "SW502" V 3346 3402 50  0000 R CNN
+F 1 "SW_Push" V 3255 3402 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 3300 3650 50  0001 C CNN
+F 3 "" H 3300 3650 50  0001 C CNN
+	1    3300 3450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0502
+U 1 1 5E917FF6
+P 2450 3800
+F 0 "#PWR0502" H 2450 3550 50  0001 C CNN
+F 1 "GND" H 2455 3627 50  0000 C CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0503
+U 1 1 5E91800B
+P 3300 3800
+F 0 "#PWR0503" H 3300 3550 50  0001 C CNN
+F 1 "GND" H 3305 3627 50  0000 C CNN
+F 2 "" H 3300 3800 50  0001 C CNN
+F 3 "" H 3300 3800 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3800 2450 3650
+Wire Wire Line
+	3300 3800 3300 3650
+Wire Wire Line
+	3300 3250 3300 3100
+Wire Wire Line
+	2450 3250 2450 3100
+Wire Wire Line
+	3300 2700 3300 2500
+Wire Wire Line
+	2450 2700 2450 2500
+Text GLabel 2450 2500 1    50   Input ~ 0
++3.3v
+Text GLabel 3300 2500 1    50   Input ~ 0
++3.3v
+Wire Wire Line
+	6250 3000 6650 3000
+Wire Wire Line
+	6250 3400 6650 3400
+Wire Wire Line
+	5300 3200 5050 3200
+Wire Wire Line
+	5300 3000 5050 3000
+Text Label 6650 3000 0    50   ~ 0
+RX_PROG
+Text Label 5050 3000 2    50   ~ 0
+ESP_RST
+Wire Wire Line
+	2450 3100 2150 3100
+Connection ~ 2450 3100
+Wire Wire Line
+	2450 3100 2450 3000
+Wire Wire Line
+	3300 3100 3100 3100
+Connection ~ 3300 3100
+Wire Wire Line
+	3300 3100 3300 3000
+Text Label 2150 3100 2    50   ~ 0
+RX_PROG
+Text Label 3100 3100 2    50   ~ 0
+ESP_RST
+Text GLabel 5050 3200 0    50   Input ~ 0
++3.3v
+Wire Wire Line
+	6250 3200 7250 3200
+$Comp
+L Device:LED D502
+U 1 1 5E91D7FD
+P 8100 3200
+F 0 "D502" H 8092 2945 50  0000 C CNN
+F 1 "LED_jaune_Tx" H 8092 3036 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8100 3200 50  0001 C CNN
+F 3 "~" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R504
+U 1 1 5E91D894
+P 7400 3200
+F 0 "R504" V 7193 3200 50  0000 C CNN
+F 1 "330" V 7284 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7330 3200 50  0001 C CNN
+F 3 "~" H 7400 3200 50  0001 C CNN
+	1    7400 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 3200 7950 3200
+Wire Wire Line
+	8250 3200 8850 3200
+Wire Wire Line
+	8850 3200 8850 3350
+$Comp
+L power:GND #PWR0504
+U 1 1 5E91DCB9
+P 8850 3350
+F 0 "#PWR0504" H 8850 3100 50  0001 C CNN
+F 1 "GND" H 8855 3177 50  0000 C CNN
+F 2 "" H 8850 3350 50  0001 C CNN
+F 3 "" H 8850 3350 50  0001 C CNN
+	1    8850 3350
+	1    0    0    -1  
+$EndComp
+Text GLabel 6650 3400 2    50   Input ~ 0
+TX_ESP
+Wire Wire Line
+	6250 3500 7100 3500
+Text Label 7100 3500 0    50   ~ 0
+RX_ESP_3.3v
+Text Label 6300 5050 2    50   ~ 0
+RX_ESP_3.3v
+$Comp
+L Device:D_Schottky D501
+U 1 1 5E946BCB
+P 7450 5050
+F 0 "D501" H 7450 4834 50  0000 C CNN
+F 1 "D_Schottky" H 7450 4925 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7450 5050 50  0001 C CNN
+F 3 "~" H 7450 5050 50  0001 C CNN
+	1    7450 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R503
+U 1 1 5E946CBA
+P 6800 4750
+F 0 "R503" H 6870 4796 50  0000 L CNN
+F 1 "4.7K" H 6870 4705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6730 4750 50  0001 C CNN
+F 3 "~" H 6800 4750 50  0001 C CNN
+	1    6800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5050 6800 5050
+Wire Wire Line
+	6800 4900 6800 5050
+Connection ~ 6800 5050
+Wire Wire Line
+	6800 5050 7300 5050
+Wire Wire Line
+	6800 4600 6800 4400
+Wire Wire Line
+	7600 5050 7900 5050
+Text GLabel 6800 4400 1    50   Input ~ 0
++3.3v
+Text GLabel 7900 5050 2    50   Input ~ 0
+RX_ESP
+$EndSCHEMATC

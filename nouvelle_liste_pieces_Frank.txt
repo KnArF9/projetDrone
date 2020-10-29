@@ -1,0 +1,5 @@
+Correction liste digikey:
+No Digikey:                           description:                          prix unitaire:              Qte:    
+- PCE3771CT-ND               CAP ALUM 470UF 20% 6.3V SMD                       0.92$                      2
+- CSR1206FK10L0CT-ND         RES 0.01 OHM 1% 1/2W 1206                         0.94$                      2
+- MCP1703T-5002E/DBCT-ND     IC REG LINEAR 5V 250MA SOT223-3                   0.94$                      2      

@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprints)(type KiCad)(uri C:/Users/farch/Desktop/prototypage#2/Drone/csd1320/footprints.pretty)(options "")(descr "")(disabled))
+  (lib (name CSD)(type KiCad)(uri C:/Users/farch/Desktop/ISO/Drone/csd1320/footprints.pretty)(options "")(descr ""))
+)
